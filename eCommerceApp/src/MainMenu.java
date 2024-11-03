@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MainMenu implements Menu {
 
     public static final String MENU_COMMAND = "menu";
@@ -22,13 +24,15 @@ public class MainMenu implements Menu {
 
     @Override
     public void start() {
-        // <implementation pending>
-
+        printMenuHeader();
+        System.out.println(MAIN_MENU_TEXT_FOR_LOGGED_OUT_USER);
+        Scanner scanner = new Scanner(System.in);
+        String userInput = scanner.next();
     }
 
     @Override
     public void printMenuHeader() {
-        // <implementation pending>
+        System.out.println("Main Menu (not logged in currently):");
     }
 
 }
