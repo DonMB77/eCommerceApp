@@ -1,0 +1,11 @@
+package onlineShop.services;
+
+import onlineShop.enteties.Product;
+
+public interface ProductManagementService {
+
+	Product[] getProducts();
+
+	Product getProductById(int productIdToAddToCart);
+
+}
